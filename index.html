@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/842edc34ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <input id="nav" type="checkbox" />
+        <label for="nav"></label>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#link-traning">TRAINING</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">WINNINGS</a></li>
+                <li><a href="#">THE STUDIO</a></li>
+                <li><a href="bookonline.html">BOOK ONLINE</a></li>
+                <li><a href="plans.html">PLANS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="parallax">
+        <div class="parallax-box">
+            <h1 class="name-h1">Dixie Delford</h1>
+            <p class="name-p">TRAINING WITH A WORLD CHAMPION</p>
+            <a href="#" class="button" id="link-traning">BOOK NOW</a>
+        </div>
+    </div>
+
+
+    <div class="split-contatiner">
+        <div class="beginner-box">
+            <div class="hover-box">
+                <div class="split-hover-box">
+                    <h3 class="split-h3">beginners</h3>
+                    <a href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="prof-box">
+            <div class="hover-box">
+                <div class="split-hover-box">
+                    <h3 class="split-h3">professionals</h3>
+                    <a href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax2">
+        <div class="parallax-text">
+            <h2 class="parallax-h2">Meet the</h2>
+            <h2 class="parallax-h2">Coach</h2>
+            <p class="parallax-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur gravida arcu ac. Et
+                malesuada fames ac turpis egestas sed tempus urna et. Amet consectetur adipiscing elit ut aliquam purus
+                sit. Gravida neque convallis a cras semper auctor. <br /><br> Lobortis mattis aliquam faucibus purus in.
+                Nisl vel pretium lectus quam. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Aliquam
+                purus sit amet luctus venenatis. Vitae justo eget magna fermentum iaculis eu non diam. Donec et odio
+                pellentesque diam volutpat commodo. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra.
+            </p>
+            <div>
+                <i class="fab fa-facebook-f sm"></i>
+                <i class="fab fa-twitter sm"></i>
+                <i class="fab fa-instagram sm"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="winnings-container">
+        <h1 class="name-h1">winnings</h1>
+        <div class="winnings">
+            <div>
+                <div class="winner-h3">
+                    <h3>15</h3>
+                </div>
+                <p>15 YEARS OF BOXING EXPERIENCE</p>
+            </div>
+            <div>
+                <div class="winner-h3">
+                    <h3>3</h3>
+                </div>
+                <p>3 TIMES WBA INTERCONTINENTAL CRUISERWEIGHT</p>
+            </div>
+            <div>
+                <div class="winner-h3">
+                    <h3>4</h3>
+                </div>
+                <p>4 TIMES WBC INTERCONTINENTAL CRUISERWEIGHT</p>
+            </div>
+            <div>
+                <div class="winner-h3">
+                    <h3>2</h3>
+                </div>
+                <p>2 TIMES IBF INTERCONTINENTAL CRUISERWEIGHT</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-container">
+        <p class="booking-p">START TRAINING TODAY</p>
+        <a href="#" class="button2">BOOK A SESSION</a>
+    </div>
+
+
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+        <div class="column">
+            <!-- <div class="img"></div> -->
+            <img src="./images/galleri-1.jpg" class="hover-shadow img" onclick="openModal();currentSlide(1)" />
+        </div>
+        <div class="column">
+            <!-- <div class="img"></div> -->
+            <img src="./images/galleri-2.jpg" class="hover-shadow img" onclick="openModal();currentSlide(2)" />
+        </div>
+        <div class="column">
+            <!-- <div class="img"></div> -->
+            <img src="./images/galleri-3.jpg" class="hover-shadow img" onclick="openModal();currentSlide(3)" />
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <!-- <div class="img"></div> -->
+            <img src="./images/galleri-4.jpg" class="hover-shadow img" onclick="openModal();currentSlide(4)" />
+        </div>
+        <div class="column">
+            <!-- <div class="img"></div> -->
+            <img src="./images/galleri-5.jpg" class="hover-shadow img" onclick="openModal();currentSlide(5)" />
+        </div>
+        <div class="column">
+            <!-- <div class="img"></div> -->
+            <img src="./images/galleri-6.jpg" class="hover-shadow img" onclick="openModal();currentSlide(6)" />
+        </div>
+
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="./images/stortbillede1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="./images/stortbillede2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="./images/stortbillede3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="./images/stortbillede4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="./images/stortbillede5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="./images/stortbillede6.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </div>
+
+    <!--Paralax3-->
+    <div class="parallax3">
+        <div class="parallax-box3">
+            <h2 class="name-h1">The studio</h2>
+            <p class="parallax3-p">We have the best training facilities in the country and the best come to train with
+                us.
+                We have a supreme weight room with all the machines and equitment you need for a good workout.
+                Besides that we also have a cardio room and a swimming pool if needed.
+            </p>
+            <div>
+                <h3 class="parallax-h3">ADDRESS</h3>
+                <p class="parallax-3p">500 TERRY FRANCOIS ST.
+                    <br/>
+                    SF, CA 94158</p>
+            </div>
+            <div>
+                <h3 class="parallax-h3">HOURS</h3>
+                <p class="parallax-3p">MONDAY - FRIDAY</p>
+                <p class="parallax-3p">6:30 AM - 7:00 PM</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <h3 class="footer-h3">Contact me</h3>
+            <p class="footer-p">WRITE OR CALL ME IF YOU <br/> HAVE MORE QUESTIONS</p>
+            <p class="footer-p">INFO@MYSITE.COM</p>
+            <p class="footer-p">123-456-7890</p>
+
+            <div>
+                <a href="#"><i class="fab fab2 fa-facebook-f sm"></i></a>
+                <a href="#"><i class="fab fab2 fa-twitter sm"></i></a>
+                <a href="#"><i class="fab fab2 fa-instagram sm"></i></a>
+            </div>
+
+        </div>
+        <div>
+            <form>
+                <input type="text" placeholder="Name"/>
+                <br/>
+                <input type="email" placeholder="Email" />
+                <br/>
+                <input type="text" placeholder="Subject" />
+                <br/>
+                <textarea placeholder="Message"></textarea>
+                <br/>
+                <input type="submit" class="footer-button" value="Submit"/>
+            </form>
+        </div>
+        
+    </footer>
+
+</body>
+<script>
+    // Open the Modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
+
+</html>
